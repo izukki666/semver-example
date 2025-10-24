@@ -4,6 +4,8 @@ def hello_world():
 
 def hello_name(name):
     """Новая функция приветствия с именем"""
+    if not name or name.strip() == "":
+        return "Hello, Anonymous!"
     return f"Hello, {name}!"
 
 def main():
